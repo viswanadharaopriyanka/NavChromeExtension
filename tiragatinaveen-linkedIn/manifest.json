@@ -1,0 +1,21 @@
+{
+    
+    "background": {
+       "service_worker": "background.js"
+    },
+    "content_scripts": [ {
+       "js": [ "scripts/content.js" ],
+       "matches": [ "https://www.linkedin.com/*" ]
+    } ],
+    "description": "Personal App for Naveen to get Job details and store them in local Storage.",
+    "action" : {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 3,
+    "name": "LinkedIn Extension",
+    "host_permissions": ["https://www.linkedin.com/*"],
+    "optional_host_permissions": [ "https://*/*", "http://*/*" ],
+    "permissions": [ "activeTab", "tabs", "scripting", "storage" ],
+    "version": "2.0.1"
+ }
+ 

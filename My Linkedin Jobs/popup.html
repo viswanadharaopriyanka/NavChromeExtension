@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: none;
+        background-color: #0073b1;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #005a8d;
+      }
+      .status {
+        margin-top: 20px;
+        font-size: 14px;
+        color: green;
+      }
+      #progress {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>LinkedIn Job Scraper</h2>
+    <div id="progress">
+      <p id="progress_text">Ready to scrape jobs</p>
+    </div>
+    <button id="start_scraping">Start Scraping Jobs</button>
+    <button id="clear_all">Clear All Data</button>
+    <button id="download_all">Download All Data</button>
+    <p class="status" id="status"></p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
